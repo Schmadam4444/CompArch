@@ -1,7 +1,7 @@
 module RegFile(rs1, rs2, readOut1, readOut2, rd, readEn, writeEn, dataIn, en, clk, reset);
 
 input [4:0] rs1, rs2; //destrination of read reg
-output [4:0] rd; // address for where value will be written
+input [4:0] rd; // address for where value will be written
 output reg [31:0] readOut1, readOut2; //bitstrings read from rs1 and rs2
 input en, clk, reset; // basic
 input readEn, writeEn; // read enable and write enable
