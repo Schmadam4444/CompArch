@@ -11,20 +11,22 @@ module RegFile_testbench(rs1, rs2, readOut1, readOut2, rd, readEn, writeEn, data
 			en <= 1'b1; //enable on
 			clk <= 1'b0; //clock set to 0
 			reset <= 1'b0; //reset set to 0
-			readEn <= 1'b1; //read enable on
+			readEn <= 1'b0; //read enable off
 			writeEn <= 1'b1; //write enable on
 			rd <= 5'b00010; //destination register set to 0
 			rs1 <= 5'b00001; //source register 1 set to 0
 			rs2 <= 5'b00000; //source register 1 set to 0
 			dataIn <= 32'b00000000000000000000000000000000; //input data set to 0
-			#750 $stop; //stop at time = 750
+			#1280 $stop; //stop at time = 750
 		end
 		
 		
-		always #1 clk <= ~clk; //clock cycle 10 ps
+		always #1 clk <= ~clk; //clock cycle 1 ps
 		
 		always begin
 			#10 dataIn <= $random; //random value for dataIn
+			#640 writeEn <= 1'b0;
+			#640 readEn <= 1'b1;
 			rd <= rd + 1; //destination register increment
 			rs1 <= rs1 + 1; //destination register increment
 			rs2 <= rs2 + 1; //destination register increment
