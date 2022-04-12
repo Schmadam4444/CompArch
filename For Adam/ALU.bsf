@@ -1,0 +1,71 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 2018  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details.
+*/
+(header "symbol" (version "1.2"))
+(symbol
+	(rect 64 64 280 280)
+	(text "ALU" (rect 5 0 26 12)(font "Arial" ))
+	(text "inst" (rect 8 96 25 108)(font "Arial" ))
+	(port
+		(pt 0 48)
+		(input)
+		(text "A[31..0]" (rect 0 0 38 12)(font "Arial" ))
+		(text "A[31..0]" (rect 21 43 59 55)(font "Arial" ))
+		(line (pt 0 48)(pt 16 48)(line_width 3))
+	)
+	(port
+		(pt 0 152)
+		(input)
+		(text "B[31..0]" (rect 0 0 38 12)(font "Arial" ))
+		(text "B[31..0]" (rect 21 147 59 159)(font "Arial" ))
+		(line (pt 0 152)(pt 16 152)(line_width 3))
+	)
+	(port
+		(pt 80 216)
+		(input)
+		(text "opcode[6..0]" (rect 0 104 61 116)(font "Arial" ))
+		(text "opcode[6..0]" (rect 72 129 84 190)(font "Arial" )(vertical))
+		(line (pt 80 216)(pt 80 200)(line_width 3))
+	)
+	(port
+		(pt 216 48)
+		(output)
+		(text "aluOut[31..0]" (rect 16 0 79 12)(font "Arial" ))
+		(text "aluOut[31..0]" (rect 144 40 207 52)(font "Arial" ))
+		(line (pt 216 48)(pt 200 48)(line_width 3))
+	)
+	(port
+		(pt 216 128)
+		(output)
+		(text "carry" (rect 16 0 41 12)(font "Arial" ))
+		(text "carry" (rect 174 123 199 135)(font "Arial" ))
+		(line (pt 216 128)(pt 200 128))
+	)
+	(port
+		(pt 136 216)
+		(output)
+		(text "flags[4..0]" (rect 16 0 66 12)(font "Arial" ))
+		(text "flags[4..0]" (rect 128 142 140 192)(font "Arial" )(vertical))
+		(line (pt 136 216)(pt 136 200)(line_width 3))
+	)
+	(drawing
+		(rectangle (rect 16 16 200 200))
+	)
+)

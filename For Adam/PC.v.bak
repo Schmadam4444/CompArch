@@ -1,0 +1,15 @@
+module PC (in, clk, out);
+
+	input [31:0] in;
+	input clk;
+	reg [31:0] PCreg;
+	output reg [31:0] out;
+	
+	always @(clk) begin
+	
+		PCreg <= in;
+		out <= PCreg;
+		
+	endcase
+
+endmodule

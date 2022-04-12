@@ -1,0 +1,120 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 2018  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details.
+*/
+(header "symbol" (version "1.2"))
+(symbol
+	(rect -48 64 568 272)
+	(text "CU" (rect 117 0 133 12)(font "Arial" ))
+	(text "inst" (rect 120 192 137 204)(font "Arial" ))
+	(port
+		(pt 112 0)
+		(input)
+		(text "word[31..0]" (rect 112 0 166 12)(font "Arial" ))
+		(text "word[31..0]" (rect 104 25 116 79)(font "Arial" )(vertical))
+		(line (pt 112 0)(pt 112 16)(line_width 3))
+	)
+	(port
+		(pt 264 0)
+		(input)
+		(text "Q6[4..0]" (rect 112 0 152 12)(font "Arial" ))
+		(text "Q6[4..0]" (rect 256 26 268 66)(font "Arial" )(vertical))
+		(line (pt 264 0)(pt 264 16)(line_width 3))
+	)
+	(port
+		(pt 328 0)
+		(input)
+		(text "Beq" (rect 112 0 130 12)(font "Arial" ))
+		(text "Beq" (rect 320 25 332 43)(font "Arial" )(vertical))
+		(line (pt 328 0)(pt 328 16))
+	)
+	(port
+		(pt 352 0)
+		(input)
+		(text "Blt" (rect 112 0 124 12)(font "Arial" ))
+		(text "Blt" (rect 344 25 356 37)(font "Arial" )(vertical))
+		(line (pt 352 0)(pt 352 16))
+	)
+	(port
+		(pt 432 0)
+		(output)
+		(text "Bsel" (rect 328 0 349 12)(font "Arial" ))
+		(text "Bsel" (rect 424 23 436 44)(font "Arial" )(vertical))
+		(line (pt 432 0)(pt 432 16))
+	)
+	(port
+		(pt 456 0)
+		(output)
+		(text "Asel" (rect 328 0 349 12)(font "Arial" ))
+		(text "Asel" (rect 448 23 460 44)(font "Arial" )(vertical))
+		(line (pt 456 0)(pt 456 16))
+	)
+	(port
+		(pt 32 0)
+		(output)
+		(text "PCsel" (rect 328 0 357 12)(font "Arial" ))
+		(text "PCsel" (rect 24 23 36 52)(font "Arial" )(vertical))
+		(line (pt 32 0)(pt 32 15))
+	)
+	(port
+		(pt 224 0)
+		(output)
+		(text "REGwen" (rect 472 0 514 12)(font "Arial" ))
+		(text "REGwen" (rect 216 23 228 65)(font "Arial" )(vertical))
+		(line (pt 224 0)(pt 224 16))
+	)
+	(port
+		(pt 176 0)
+		(output)
+		(text "IMMsel" (rect 328 0 362 12)(font "Arial" ))
+		(text "IMMsel" (rect 168 23 180 57)(font "Arial" )(vertical))
+		(line (pt 176 0)(pt 176 16))
+	)
+	(port
+		(pt 304 0)
+		(output)
+		(text "BRun" (rect 472 0 499 12)(font "Arial" ))
+		(text "BRun" (rect 296 23 308 50)(font "Arial" )(vertical))
+		(line (pt 304 0)(pt 304 16))
+	)
+	(port
+		(pt 536 0)
+		(output)
+		(text "ALUop[6..0]" (rect 472 0 531 12)(font "Arial" ))
+		(text "ALUop[6..0]" (rect 528 23 540 82)(font "Arial" )(vertical))
+		(line (pt 536 0)(pt 536 16)(line_width 3))
+	)
+	(port
+		(pt 480 0)
+		(output)
+		(text "WBsel" (rect 328 0 359 12)(font "Arial" ))
+		(text "WBsel" (rect 472 23 484 54)(font "Arial" )(vertical))
+		(line (pt 480 0)(pt 480 16))
+	)
+	(port
+		(pt 584 0)
+		(output)
+		(text "MEMrw" (rect 472 0 506 12)(font "Arial" ))
+		(text "MEMrw" (rect 576 23 588 57)(font "Arial" )(vertical))
+		(line (pt 584 0)(pt 584 16))
+	)
+	(drawing
+		(rectangle (rect 16 16 600 192))
+	)
+)
